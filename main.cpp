@@ -30,7 +30,6 @@ int main() {
             cout << "Ingresa el segundo número: ";
             cin >> num2;
             cout << endl;
-            //Suma
             suma = num1+num2;
             resta = num1-num2;
             división = num1/num2;
@@ -71,6 +70,59 @@ int main() {
             cout<<"Horas: "<<horas<<endl;
             cout<<"Minutos: "<<minutos<<endl;
             cout<<"Segundos: "<<segundos<<endl;
+            break;
+        }
+        case 5: {
+            string nombreProducto;
+            float precio=0, impuesto=0.19, valorImpuesto=0, subtotal=0,total=0;
+            int cantidad=0;
+            cout << "Ejercicio 05." << endl;
+            cout << "---------------" << endl;
+            cout<<"¿Qué producto compraste? ";
+            cin >> nombreProducto;
+            cout << endl<<"¿Cuánto de este producto compraste?";
+            cin >> cantidad;
+            cout<<endl<<"Y, ¿Cuánto vale este producto?";
+            cin>>precio;
+            subtotal = precio*cantidad;
+            valorImpuesto = subtotal*impuesto;
+            total = subtotal+valorImpuesto;
+            cout<<"Subtotal: "<<subtotal<<endl;
+            cout<<"Valor del Impuesto: "<<valorImpuesto<<endl;
+            cout<<"Total: "<<total<<endl;
+            break;
+        }
+        case 6: {
+            int num1=0,num2=0,aux=0;
+            cout << "Ejercicio 06." << endl;
+            cout << "---------------" << endl;
+            cout<<"Ingresa un número: ";
+            cin >> num1;
+            cout<<"Ingresa un segundo número: ";
+            cin >> num2;
+            cout << endl;
+            cout<<"Primer número: "<<num1<<endl;
+            cout<<"Segundo número: "<<num2<<endl;
+            aux = num1;
+            num1 = num2;
+            num2 = aux;
+            cout<<"Número 1 intercambiado: "<<num1<<endl;
+            cout<<"Número 2 intercambiado: "<<num2<<endl;
+            break;
+        }
+        case 7: {
+            int numUsuario=0;
+            cout << "Ejercicio 07." << endl;
+            cout << "---------------" << endl;
+            cout<<"Ingresa un numero: ";
+            cin >> numUsuario;
+            cout << endl;
+            if (numUsuario <0) {
+                cout<<"El número "<<numUsuario<<" es negativo"<<endl;
+            }else if (numUsuario >0) {
+                cout<<"El número "<<numUsuario<<" es positivo"<<endl;
+            }else
+                cout<<"Tu número es el 0";
             break;
         }
         default: {
