@@ -56,8 +56,8 @@ int main() {
                 cout<<"Decenas: "<<decenas<<endl;
                 cout<<"Unidades: "<<unidades<<endl;
             }
-            }
-            break;
+        }
+        break;
         case 4: {
             int totalSegundos=0, horas=0,minutos=0,segundos=0;
             cout << "Ejercicio 04." << endl;
@@ -125,10 +125,29 @@ int main() {
                 cout<<"Tu número es el 0";
             break;
         }
+        case 8: {
+            int numUsuario=0;
+            cout << "Ejercicio 08." << endl;
+            cout << "---------------" << endl;
+            cout<<"Ingresa un numero: ";
+            cin >> numUsuario;
+            cout << endl;
+            if (numUsuario ==0){
+                cout<<"Tu número es el 0"<<endl;
+            }else if ((numUsuario%2)==0 && (numUsuario%5)==0) {
+                cout<<"El número "<<numUsuario<<" es par, y es múltiplo de 5";
+            }else if ((numUsuario%2)==0 && (numUsuario%5)!=0) {
+                cout<<"El número "<<numUsuario<<" es par, pero no es múltiplo de 5";
+            }else if ((numUsuario%2)!=0 && (numUsuario%5)==0) {
+                cout<<"El número "<<numUsuario<<" no es par, pero es múltiplo de 5";
+            }else
+                cout<<"El número "<<numUsuario<<" no es par ni múltiplo de 5";
+            break;
+        }
         default: {
             cout <<"Número del ejercicio no válido";
             break;
         }
     }
     return 0;
-}
+    }
