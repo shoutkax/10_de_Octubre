@@ -128,6 +128,26 @@ int main() {
                 cout<<"Debe ser un número mayor o igual a 1";
             break;
         }
+        case 21: {
+            int numUsuario=0, acumuladorFactorial=1;
+            cout << "Ejercicio 21." << endl;
+            cout << "---------------" << endl;
+            cout << "Ingresa un numero: ";
+            cin >> numUsuario;
+            if (numUsuario==0) {
+                cout<<"El factorial de 0 es 1";
+            }
+            else if (numUsuario>12) {
+                cout<<"El límite factorial para este programa es de 12."<<endl;
+            }else{
+                while (numUsuario !=0) {
+                    acumuladorFactorial = acumuladorFactorial*numUsuario;
+                    numUsuario = numUsuario-1;
+                }
+                cout<<"El acumulado factorial es de: "<<acumuladorFactorial<<endl;
+            }
+            break;
+        }
         default:
             cout <<" \nOpción Inválida"<<endl;
             break;
