@@ -22,7 +22,7 @@ int main() {
             break;
         }
         case 2: {
-            int num1=0, num2=0, suma=0, resta=0, división=0, residuo=0;
+            int num1=0, num2=0, suma=0, resta=0, division=0, residuo=0;
             cout << "Ejercicio 02." << endl;
             cout << "---------------" << endl;
             cout << "Ingresa el primer número: ";
@@ -39,11 +39,11 @@ int main() {
             }else {
                 suma = num1+num2;
                 resta = num1-num2;
-                división = num1/num2;
+                division = num1/num2;
                 residuo = num1%num2;
                 cout<<"Suma: "<<suma<<endl;
                 cout<<"Resta: "<<resta<<endl;
-                cout<<"división: "<<división<<endl;
+                cout<<"división: "<<division<<endl;
                 cout<<"Residuo: "<<residuo<<endl;
             }
             break;
