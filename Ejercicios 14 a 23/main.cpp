@@ -132,7 +132,7 @@ int main() {
             int numUsuario=0, acumuladorFactorial=1;
             cout << "Ejercicio 21." << endl;
             cout << "---------------" << endl;
-            cout << "Ingresa un numero: ";
+            cout << "Ingresa un numero de 0 a 12: ";
             cin >> numUsuario;
             if (numUsuario==0) {
                 cout<<"El factorial de 0 es 1";
@@ -145,6 +145,45 @@ int main() {
                     numUsuario = numUsuario-1;
                 }
                 cout<<"El acumulado factorial es de: "<<acumuladorFactorial<<endl;
+            }
+            break;
+        }
+        case 22: {
+            int numUsuario=0;
+            cout << "Ejercicio 22." << endl;
+            cout << "---------------" << endl;
+            cout << "Ingresa un numero de 1 a 9: ";
+            cin >> numUsuario;
+            while (numUsuario <1 || numUsuario>9) {
+                cout << "Altura inválida, intenta nuevamente de 1 a 9: ";
+                cin >> numUsuario;
+            }
+            for (int i=1; i<=numUsuario; i++) {
+                for (int j=1; j<=i; j++) {
+                    cout<<"*";
+                }
+                cout <<endl;
+            }
+            break;
+        }
+        case 23: {
+            int intentos=7,secreto=37,numUsuario=0;
+            cout << "Ejercicio 23." << endl;
+            cout << "---------------" << endl;
+            cout << "Adivina un número de 1 a 50. Tienes 7 intentos.: ";
+            while (numUsuario !=secreto && intentos>0) {
+                cout<<"Ingresa un número: ";
+                cin >> numUsuario;
+                if (numUsuario==secreto) {
+                    cout<<"Felicidades, ganaste el juego!"<<endl;
+                }else {
+                    intentos--;
+                    if (intentos>0) {
+                        cout<<"Número incorrecto, te quedan "<<intentos<<" intentos"<<endl;
+                    } else {
+                        cout <<"Ya no te quedan más intentos, perdiste"<<endl;
+                    }
+                }
             }
             break;
         }
