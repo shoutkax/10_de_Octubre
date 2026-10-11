@@ -77,6 +77,57 @@ int main() {
                 cout<<"No ingresaste ningún número y cerraste el programa."<<endl;
         break;
         }
+        case 18: {
+            int numUsuario=0, suma=0, contador=0;
+            cout << "Ejercicio 18." << endl;
+            cout << "---------------" << endl;
+            cout << "Ingresa un numero: ";
+            cin >> numUsuario;
+            while (numUsuario !=0) {
+                suma = (numUsuario%10)+suma;
+                numUsuario = numUsuario/10;
+                contador++;
+            }
+            cout<<"Tu número tiene "<<contador<<" dígitos"<<endl;
+            cout<<"La suma acumulada de los números es "<<suma<<endl;
+        break;
+        }
+        case 19: {
+            int numUsuario=0, numInvertido=0;
+            cout<<"Ejercicio 19." << endl;
+            cout << "---------------" << endl;
+            cout << "Ingresa un numero positivo: ";
+            cin >> numUsuario;
+            while (numUsuario !=0) {
+                numInvertido = (numInvertido*10)+(numUsuario%10);
+                cout<<numInvertido<<endl;
+                numUsuario = numUsuario/10;
+            }
+            cout << "El nuevo número (invertido) es: "<<numInvertido<<endl;
+            break;
+        }
+        case 20: {
+            int numUsuario=0, divisor=2;
+            bool primo=true;
+            cout << "Ejercicio 20." << endl;
+            cout << "---------------" << endl;
+            cout << "Ingresa un numero: ";
+            cin >> numUsuario;
+            if (numUsuario>1){
+                while (primo==true  && divisor<numUsuario) {
+                    if (numUsuario%divisor==0) {
+                        primo=false;
+                    }else divisor ++;
+                }
+                if (primo==true) {
+                    cout<<numUsuario<<" es un número primo"<<endl;
+                } else {
+                    cout<<numUsuario<<" no es primo"<<endl;
+                }
+            }else
+                cout<<"Debe ser un número mayor o igual a 1";
+            break;
+        }
         default:
             cout <<" \nOpción Inválida"<<endl;
             break;
