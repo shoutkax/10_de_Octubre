@@ -30,7 +30,14 @@ int main() {
             cout << "Ingresa el segundo número: ";
             cin >> num2;
             cout << endl;
-            suma = num1+num2;
+            if (num1 == 0 || num2 == 0) {
+                suma = num1+num2;
+                resta = num1-num2;
+                cout<<"Suma: "<<suma<<endl;
+                cout<<"Resta: "<<resta<<endl;
+                cout <<"No se puede dividir por 0"<<endl;
+            }else
+                suma = num1+num2;
             resta = num1-num2;
             división = num1/num2;
             residuo = num1%num2;
@@ -56,8 +63,8 @@ int main() {
                 cout<<"Decenas: "<<decenas<<endl;
                 cout<<"Unidades: "<<unidades<<endl;
             }
+            break;
         }
-        break;
         case 4: {
             int totalSegundos=0, horas=0,minutos=0,segundos=0;
             cout << "Ejercicio 04." << endl;
@@ -142,6 +149,117 @@ int main() {
                 cout<<"El número "<<numUsuario<<" no es par, pero es múltiplo de 5";
             }else
                 cout<<"El número "<<numUsuario<<" no es par ni múltiplo de 5";
+            break;
+        }
+        case 9: {
+            int num1=0,num2=0,num3=0;
+            cout << "Ejercicio 09." << endl;
+            cout << "---------------" << endl;
+            cout<<"Ingresa tres números, uno seguido de otro: "<<endl;
+            cin>>num1;
+            cin>>num2;
+            cin>>num3;
+            if (num1>num2 && num1>num3) {
+                cout<<num1<<" es el número mayor"<<endl;
+            }else if (num2>num3 && num2>num1) {
+                cout<<num2<<" es el número mayor"<<endl;
+            }else if (num3>num1 && num3>num2) {
+                cout<<num3<<" es el número mayor"<<endl;
+            }else
+                cout<<"Los tres números son iguales";
+            break;
+        }
+        case 10: {
+            int fecha=0;
+            cout << "Ejercicio 10." << endl;
+            cout << "---------------" << endl;
+            cout<<"Ingresa un año: ";
+            cin >> fecha;
+            cout << endl;
+            if ((fecha%4)==0&&(fecha%100)!=0||(fecha%400)==0) {
+                cout<<fecha<<" es un año bisiesto"<<endl;
+            }else
+                cout<<fecha<<" no es un año bisiesto"<<endl;
+            break;
+        }
+        case 11: {
+            float nota=0;
+            cout << "Ejercicio 11." << endl;
+            cout << "---------------" << endl;
+            cout<<"Ingresa una nota: ";
+            cin >> nota;
+            cout << endl;
+            if ((nota>=0) && (nota<3)) {
+                cout<<"Sacaste "<<nota<<" reprobaste"<<endl;
+            }else if (nota>=3 && nota<4) {
+                cout<<"Sacaste "<<nota<<" calificación: aceptable"<<endl;
+            }else if (nota>=4 && nota<4.6) {
+                cout<<"Sacaste "<<nota<<" calificación: bueno"<<endl;
+            }else if (nota>=4.5 && nota<=5) {
+                cout<<"Sacaste "<<nota<<" calificación: excelente"<<endl;
+            }else
+                cout<<"Número fuera de rango, la nota debe ser de 0 a 5";
+            break;
+        }
+        case 12: {
+            float num1=0,num2=0, sum=0,res=0,div=0,mult=0;
+            int eleccion=0;
+            cout << "Ejercicio 12." << endl;
+            cout << "---------------" << endl;
+            cout<<"Ingresa un numero: ";
+            cin >> num1;
+            cout<<endl<<"Ingresa otro numero: ";
+            cin >> num2;
+            cout<<"¿Qué deseas hacer con estos 2 números?\n1. Suma\n2. Resta\n3.Multiplicación\n4.División"<<endl;
+            cin>>eleccion;
+            switch (eleccion) {
+                case 1: {
+                    sum=num1+num2;
+                    cout<<"La suma de los dos números es: "<<sum<<endl;
+                    break;
+                }
+                case 2: {
+                    res=num1-num2;
+                    cout<<"La resta de los dos números es: "<<res<<endl;
+                    break;
+                }
+                case 3: {
+                    mult=num1*num2;
+                    cout<<"La multiplicación de los dos números es: "<<mult<<endl;
+                    break;
+                }
+                case 4: {
+                    if (num1!=0 &&num2!=0) {
+                        div=num1/num2;
+                        cout<<"La división de los dos números es: "<<div<<endl;
+                    } else
+                        cout<<"No puedes dividir entre 0"<<endl;
+                    break;
+                }
+                default: {
+                    cout<<"Elección incorrecta, el programa terminará.";
+                    break;
+                }
+            }
+            break;
+        }
+        case 13: {
+            int hora=0,minuto=0;
+            cout << "Ejercicio 13." << endl;
+            cout << "---------------" << endl;
+            cout<<"Ingresa la hora: ";
+            cin >> hora;
+            cout<<endl<<"Ingresa los minutos: ";
+            cin >> minuto;
+            cout<<endl;
+            if ((hora<0||hora>23)||(minuto<0||minuto>59)) {
+                cout<<"Has ingresado un valor fuera de rango" << endl;
+            }else if ((hora>=6&&hora<12)) {
+                cout<<"Es de mañana"<<endl;
+            }else if ((hora>=12&&hora<18)) {
+                cout<<"Es la tarde"<<endl;
+            }else
+                cout<<"Es la noche";
             break;
         }
         default: {
