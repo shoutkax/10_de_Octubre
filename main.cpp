@@ -263,7 +263,7 @@ int main() {
             break;
         }
         default: {
-            cout <<"Número del ejercicio no válido";
+            cout <<"Número del ejercicio inválido";
             break;
         }
     }
