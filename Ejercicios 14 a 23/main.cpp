@@ -35,7 +35,8 @@ int main() {
             while (numUsuario < 1 || numUsuario > 12) {
                 cout<<"Número inválido, debe ser entre 1 y 12, ingresa otro número: ";
                 cin >>numUsuario;
-            }for (int i=1; i<10; i++) {
+            }
+            for (int i=1; i<11; i++) {
                 cout <<numUsuario<<" x "<<i<<" = "<<numUsuario*i<<endl;
             }
             break;
@@ -69,7 +70,7 @@ int main() {
                 cin>>numUsuario;
             }
             if (numerosIngresados!=0) {
-                int promedio=suma/numerosIngresados;
+                double promedio=suma/numerosIngresados;
                 cout<<"Suma de tus números: "<<suma<<endl;
                 cout<<"El promedio de tus números: "<<promedio<<endl;
                 cout<<"Ingresaste "<<numerosIngresados<<" números"<<endl;
@@ -100,7 +101,6 @@ int main() {
             cin >> numUsuario;
             while (numUsuario !=0) {
                 numInvertido = (numInvertido*10)+(numUsuario%10);
-                cout<<numInvertido<<endl;
                 numUsuario = numUsuario/10;
             }
             cout << "El nuevo número (invertido) es: "<<numInvertido<<endl;
@@ -125,7 +125,7 @@ int main() {
                     cout<<numUsuario<<" no es primo"<<endl;
                 }
             }else
-                cout<<"Debe ser un número mayor o igual a 1";
+                cout<<"Debe ser un número mayor a 1"<<endl;
             break;
         }
         case 21: {
