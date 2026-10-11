@@ -18,7 +18,7 @@ int main() {
             cin >> nombre;
             cout << "¿Cuántos años tienes?";
             cin >> edad;
-            cout <<"Hola "<<nombre<<", El próximo año tendrás "<<edad+1<<" años"<<endl;
+            cout <<"Hola "<<nombre<<", el próximo año tendrás "<<edad+1<<" años"<<endl;
             break;
         }
         case 2: {
@@ -36,15 +36,16 @@ int main() {
                 cout<<"Suma: "<<suma<<endl;
                 cout<<"Resta: "<<resta<<endl;
                 cout <<"No se puede dividir por 0"<<endl;
-            }else
+            }else {
                 suma = num1+num2;
-            resta = num1-num2;
-            división = num1/num2;
-            residuo = num1%num2;
-            cout<<"Suma: "<<suma<<endl;
-            cout<<"Resta: "<<resta<<endl;
-            cout<<"división: "<<división<<endl;
-            cout<<"Residuo: "<<residuo<<endl;
+                resta = num1-num2;
+                división = num1/num2;
+                residuo = num1%num2;
+                cout<<"Suma: "<<suma<<endl;
+                cout<<"Resta: "<<resta<<endl;
+                cout<<"división: "<<división<<endl;
+                cout<<"Residuo: "<<residuo<<endl;
+            }
             break;
         }
         case 3: {
@@ -58,7 +59,7 @@ int main() {
             }else {
                 int centenas = num/100;
                 int decenas = (num%100)/10;
-                int unidades = num%100;
+                int unidades = num%10;
                 cout<<"Centenas: "<<centenas<<endl;
                 cout<<"Decenas: "<<decenas<<endl;
                 cout<<"Unidades: "<<unidades<<endl;
@@ -229,7 +230,7 @@ int main() {
                     break;
                 }
                 case 4: {
-                    if (num1!=0 &&num2!=0) {
+                    if (num2!=0) {
                         div=num1/num2;
                         cout<<"La división de los dos números es: "<<div<<endl;
                     } else
