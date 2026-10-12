@@ -1,8 +1,9 @@
-//
-// Created by Admin on 11/10/2026.
-//
-#include <iostream>
+# include <iostream>
+# include <windows.h>
 using namespace std;
+
 int main() {
-    cout << "hello world"<<endl;
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
+    return 0;
 }
