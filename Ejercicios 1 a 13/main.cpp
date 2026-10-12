@@ -10,6 +10,8 @@ int main() {
     cin >> ejercicioSeleccionado;
     switch (ejercicioSeleccionado) {
         case 1: {
+            // Pide tu nombre (una palabra) y tu edad. Muestra:
+            // «Hola NOMBRE, el próximo año tendrás X años»
             string nombre;
             int edad;
             cout << "Ejercicio 01." << endl;
@@ -22,6 +24,8 @@ int main() {
             break;
         }
         case 2: {
+            // Pide dos enteros y muestra suma, resta, producto, división entera y residuo.
+            // Antes de ejecutar, predice a mano el resultado con 17 y 5, y con 7 y 2.
             int num1=0, num2=0, suma=0, resta=0, division=0, residuo=0;
             cout << "Ejercicio 02." << endl;
             cout << "---------------" << endl;
@@ -49,6 +53,8 @@ int main() {
             break;
         }
         case 3: {
+            //  Pide un número de 3 cifras (100 a 999) y
+            //  muestra sus centenas, decenas y unidades usando solo / y %.
             int num=0;
             cout << "Ejercicio 03." << endl;
             cout << "---------------" << endl;
@@ -67,6 +73,8 @@ int main() {
             break;
         }
         case 4: {
+            // Pide una cantidad de segundos y muéstrala como horas,
+            // minutos y segundos. Prueba con 3725 (debe dar 1 h, 2 min, 5 s).
             int totalSegundos=0, horas=0,minutos=0,segundos=0;
             cout << "Ejercicio 04." << endl;
             cout << "---------------" << endl;
@@ -81,6 +89,8 @@ int main() {
             break;
         }
         case 5: {
+            // Pide el precio de un producto y la cantidad comprada.
+            // Calcula subtotal, IVA del 19 % y total, con dos decimales
             string nombreProducto;
             float precio=0, impuesto=0.19, valorImpuesto=0, subtotal=0,total=0;
             int cantidad=0;
@@ -101,6 +111,8 @@ int main() {
             break;
         }
         case 6: {
+            // Pide dos números e intercámbialos usando una variable auxiliar.
+            // Muestra los valores antes y después
             int num1=0,num2=0,aux=0;
             cout << "Ejercicio 06." << endl;
             cout << "---------------" << endl;
@@ -119,6 +131,7 @@ int main() {
             break;
         }
         case 7: {
+            // Pide un entero e indica si es positivo, negativo o cero.
             int numUsuario=0;
             cout << "Ejercicio 07." << endl;
             cout << "---------------" << endl;
@@ -134,6 +147,7 @@ int main() {
             break;
         }
         case 8: {
+            // Indica si un entero es par o impar, y si además es múltiplo de 5
             int numUsuario=0;
             cout << "Ejercicio 08." << endl;
             cout << "---------------" << endl;
@@ -153,6 +167,7 @@ int main() {
             break;
         }
         case 9: {
+            // Pide tres números distintos y muestra el mayor, sin usar arreglos.
             int num1=0,num2=0,num3=0;
             cout << "Ejercicio 09." << endl;
             cout << "---------------" << endl;
@@ -171,6 +186,9 @@ int main() {
             break;
         }
         case 10: {
+            //  Pide un año e indica si es bisiesto
+            //  (divisible por 4, excepto los divisibles por 100 que no lo son por 400).
+            //  Prueba 1900, 2000, 2023 y 2024.
             int fecha=0;
             cout << "Ejercicio 10." << endl;
             cout << "---------------" << endl;
@@ -184,6 +202,9 @@ int main() {
             break;
         }
         case 11: {
+            //  Pide una nota de 0.0 a 5.0 y muestra la categoría:
+            //  reprobado (menor a 3.0), aceptable (3.0a 3.9), bueno (4.0 a 4.5)
+            //  o excelente (mayor a 4.5). Fuera de rango, muestra un mensaje de error
             float nota=0;
             cout << "Ejercicio 11." << endl;
             cout << "---------------" << endl;
@@ -203,6 +224,8 @@ int main() {
             break;
         }
         case 12: {
+            // Calculadora: pide dos números y un operador (+, -, *, /).
+            // Usa switch. Controla la división entre cero y el operador inválido.
             float num1=0,num2=0, sum=0,res=0,div=0,mult=0;
             int eleccion=0;
             cout << "Ejercicio 12." << endl;
@@ -245,6 +268,10 @@ int main() {
             break;
         }
         case 13: {
+            // Pide hora (0 a 23) y minutos (0 a 59), rechazando valores fuera de rango,
+            // e indica si esmañana (6:00 a 11:59), tarde (12:00 a 17:59)
+            // o noche (18:00 a 5:59).
+
             int hora=0,minuto=0;
             cout << "Ejercicio 13." << endl;
             cout << "---------------" << endl;

@@ -12,6 +12,8 @@ int main() {
     cin >>seleccionUsuario;
     switch (seleccionUsuario) {
         case 14: {
+            // Pide N, validado entre 1 y 50 con un ciclo que repita
+            // hasta que sea correcto, y muestra los números del 1 al N.
             int num=0;
             cout << "Ejercicio 14." << endl;
             cout << "---------------" << endl;
@@ -27,6 +29,8 @@ int main() {
             break;
         }
         case 15: {
+            //  Pide un número de 1 a 12 y muestra su
+            //  tabla de multiplicar con el formato 5 x 3 = 15
             int numUsuario=0;
             cout << "Ejercicio 15." << endl;
             cout << "---------------" << endl;
@@ -42,6 +46,8 @@ int main() {
             break;
         }
         case 16: {
+            // Pide N y muestra la suma de los enteros de 1 a N y,
+            // por separado, la de los pares.
             int numUsuario=0, sumaEntero=0, sumaPar=0;
             cout << "Ejercicio 16." << endl;
             cout << "---------------" << endl;
@@ -58,6 +64,9 @@ int main() {
             break;
         }
         case 17: {
+            //  Pide números hasta que el usuario escriba 0.
+            //  Al final muestra cuántos ingresó, su suma y su promedio.
+            //  Si no ingresó ninguno, muestra un mensaje en lugar de dividir entre cero
             int numUsuario=0, suma=0, numerosIngresados=0;
             cout << "Ejercicio 17." << endl;
             cout << "---------------" << endl;
@@ -79,6 +88,8 @@ int main() {
         break;
         }
         case 18: {
+            // Pide un entero positivo y muestra cuántos dígitos tiene y cuánto suman,
+            // sin arreglos
             int numUsuario=0, suma=0, contador=0;
             cout << "Ejercicio 18." << endl;
             cout << "---------------" << endl;
@@ -94,6 +105,7 @@ int main() {
         break;
         }
         case 19: {
+            // Pide un entero positivo y muestra sus dígitos invertidos (123 queda 321).
             int numUsuario=0, numInvertido=0;
             cout<<"Ejercicio 19." << endl;
             cout << "---------------" << endl;
@@ -107,6 +119,7 @@ int main() {
             break;
         }
         case 20: {
+            // Indica si un número es primo. Prueba con 1, 2, 17 y 21.
             int numUsuario=0, divisor=2;
             bool primo=true;
             cout << "Ejercicio 20." << endl;
@@ -129,6 +142,8 @@ int main() {
             break;
         }
         case 21: {
+            // Calcula el factorial de N (0 a 12, validado).
+            // Explica en un comentario por qué el límite es 12.
             int numUsuario=0, acumuladorFactorial=1;
             cout << "Ejercicio 21." << endl;
             cout << "---------------" << endl;
@@ -149,6 +164,7 @@ int main() {
             break;
         }
         case 22: {
+            // Pide una altura de 1 a 9 y dibuja un triángulo de asteriscos de esa altura.
             int numUsuario=0;
             cout << "Ejercicio 22." << endl;
             cout << "---------------" << endl;
@@ -167,6 +183,9 @@ int main() {
             break;
         }
         case 23: {
+            // Adivina el número: el programa guarda un secreto (por ejemplo 37)
+            // y el usuario tiene 7 intentos. Tras cada intento dice
+            // «mayor» o «menor». Al terminar muestra si ganó y en cuántos intento
             int intentos=7,secreto=37,numUsuario=0;
             cout << "Ejercicio 23." << endl;
             cout << "---------------" << endl;
